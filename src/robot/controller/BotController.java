@@ -1,5 +1,6 @@
 package robot.controller;
 
-public class BotController {
+public class BotController 
+{
 
 }

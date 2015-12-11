@@ -1,5 +1,6 @@
 package robot.controller;
 
-public class SimpleRunner {
+public class SimpleRunner 
+{
 
 }
