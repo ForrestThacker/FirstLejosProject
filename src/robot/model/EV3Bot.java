@@ -25,4 +25,6 @@ public class EV3Bot
 	//write your first drive method here
 	//call the displayMessage("describe action as a string") in the helper method
 	}
+	
+	//overload the displayMessage method with a single String parameter
 }
