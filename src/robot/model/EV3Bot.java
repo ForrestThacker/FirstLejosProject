@@ -7,12 +7,24 @@ public class EV3Bot
 	private int yPosition;
 	private long waitTime;
 	
+	private MovePilot botPilot;
+	
+	private EV3UltrasonicSensor distanceSensor;
+	private float [] ultrasonicSamples;
+	
 	public EV3Bot()
 	{
 		this.botMessage = "Forrest codes forBot";
 		this.xPosition = 50;
 		this.yPosition = 50;
 		this.waitTime = 4000;
+		
+		distanceSensor= new EV3UltrasonicSensor(LocalEV3.get().getPort("S1"));
+		distanceSensor.enable();
+		setupPilot;
+	}
+	
+	{
 		
 		displayMessage();
 	}
