@@ -19,7 +19,7 @@ public class EV3Bot
 		this.yPosition = 50;
 		this.waitTime = 4000;
 		
-		distanceSensor= new EV3UltrasonicSensor(LocalEV3.get().getPort("S1"));
+		distanceSenasor= new EV3UltrasonicSensor(LocalEV3.get().getPort("S1"));
 		distanceSensor.enable();
 		setupPilot;
 	}
@@ -66,6 +66,7 @@ public class EV3Bot
 		{
 		Delay.msDelay(waitTime);
 		}
+		}
 	//helper methods
 	private boolean sendObject()
 	{
@@ -75,16 +76,18 @@ public class EV3Bot
 		{
 			return senses;
 		}
+		}
 	private int meterToInches(double meters)
 	{
 		double inches =(meters / 3.2808)/12;
 		return (int)inches;
 	}
+
 	
 	private void driveForward(boolean) canDrive)
 	{
 		if(canDrive)
 			//where all the movement code goes
 	}
-	
-}
+
+}}
